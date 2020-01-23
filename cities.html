@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cities</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="utf-8">
+  </head>  
+  <body>
+      <h1 id="headerText"> miestų sąrašas</h1>
+    <button id="btn_countries">&#8592 Šalys</button>
+    <h1 id="create"style="display: none">Pridėti šalį</h1>
+  <div id="tableContainter">
+    <div id="cityBoxContainer" style="font-weight:bold">Ieškoti</div>
+    <table id="myTable" cellpadding="2" cellspacing="2"  border="1">
+      <thead>
+        <tr>
+          <th>Nr</th>
+          <th>Miesto pavadinimas<ul><li  id="up">&#x25B2</li><li id="down">&#x25BC</li></ul></th>
+          <th>Teritorija</th>
+          <th>Gyventojų skaičius</th>
+          <th>Pašto kodas</th>
+          <th>Sukūrimo data</th>
+        </tr>
+      </thead>
+      <tbody id="items">
+      </tbody>
+    </table>
+    <div id="paginationContainer" style="display: none">
+        <a  id="prev">&#8249</a><a id=active> 1 </a><a id="next">&#8250</a>
+      </div>
+  </div>
+    <div>
+        <div id="formContainer" style="display: none">
+            <div class="row">
+              <div class="col-25">
+                <label for="name">Pavadinimas</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="name" placeholder="pvz. Kaunas...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="teritory">Teritorija</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="teritory" placeholder="65300">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="population">Populiacija</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="population" placeholder="280000">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="phone">Pašto kodas</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="phone" placeholder="LTU-125">
+              </div>
+            </div>
+            <div class="row">
+              <button type="back" id="btn_back" style="display: none;">Grįžti</button>
+              <button type="submit" id="btn_updateConfirm" style="display: none;">Patvirtinti</button>
+              <button type="submit" id="btn_createConfirm" style="display: none;">Patvirtinti</button>
+            </div>
+          </div>
+    </div>
+    <button type="submit" id="btn_create">Sukurti</button>
+  </body>
+  <footer>
+    <p>Created By: Mindaugas Navickas</p>
+    <p>Contact information: <a href="www.linkedin.com/in/mindaugasnavickas-b8bab9153">
+        www.linkedin.com/in/mindaugasnavickas-b8bab9153</a>.</p>
+  </footer>
+  <script src= "./script/cities.js"></script>
+</html>

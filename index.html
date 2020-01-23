@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Countries</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+  </head>
+  <body>
+
+    <h1 id="main">Šaliu sąrašas</h1>
+    <h1 id="create"style="display: none">Pridėti šalį</h1>
+    <div id="tableContainter">
+      <div id="countryBoxContainer" style="font-weight:bold">Ieškoti</div>
+      <table id="myTable" cellpadding="2" cellspacing="2"  border="1">
+        <thead>
+          <tr>
+            <th>Nr</th>
+            <th>Šalies pavadinimas <ul><li  id="up">&#x25B2</li><li id="down">&#x25BC</li></ul></th>
+            <th>Teritorija</th>
+            <th>Gyventojų skaičius</th>
+            <th>Telefono kodas</th>
+            <th>Sukūrimo data</th>
+          </tr>
+        </thead>
+        <tbody id="items">
+        </tbody>
+      </table>
+    <div id="paginationContainer" style="display: none">
+      <a  id="prev">&#8249</a><a id=active> 1 </a><a id="next">&#8250</a>
+    </div>
+    </div>
+    <div id="formContainer" style="display: none">
+      <div class="row">
+        <div class="col-25">
+          <label for="name">Pavadinimas</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" placeholder="pvz. Lietuva...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="teritory">Teritorija</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="teritory" placeholder="65300">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="population">Populiacija</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="population" placeholder="280000">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="phone">Telefono kodas</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="phone" placeholder="+370">
+        </div>
+      </div>
+      <div class="row">
+        <button type="back" id="btn_back" style="display: none;">Grįžti</button>
+        <button type="submit" id="btn_updateConfirm" style="display: none;">Patvirtinti</button>
+        <button type="submit" id="btn_createConfirm" style="display: none;">Patvirtinti</button>
+      </div>
+    </div>
+    <button type="submit" id="btn_create">Sukurti</button>
+  </body>
+  <footer>
+    <p>Created By: Mindaugas Navickas</p>
+    <p>Contact information: <a href='/www.linkedin.com/in/mindaugasnavickas-b8bab9153'>
+      www.linkedin.com/in/mindaugasnavickas-b8bab9153</a>.</p>
+  </footer>
+  <script src= "./script/app.js"></script>
+</html>
